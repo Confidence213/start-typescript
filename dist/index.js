@@ -1,5 +1,8 @@
 "use strict";
 var _a;
+function doIt() {
+    console.log("Hello World!");
+}
 let sales = 123455;
 let course = "TypeScript";
 let is_published = true;

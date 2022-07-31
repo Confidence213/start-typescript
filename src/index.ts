@@ -1,5 +1,9 @@
 /* Starting with the Hello world syntax */
 
+function doIt() {
+  console.log("Hello World!");
+}
+
 // console.log("Hello World!");
 
 /* Variables types in TS */
