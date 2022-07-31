@@ -114,3 +114,32 @@ let textBox: UIWidget = {
   drag: () => {},
   resize: () => {},
 };
+
+/* Literal types */
+// We use this to limit any value in ts.
+// Literal (exact, specific value)
+type Quantity = 50 | 100; //---> Literal
+//let quantity: 50 | 100; //hard coded
+let quantity: Quantity = 100;
+
+/* Nullable types */
+
+function greet(name: string | null | undefined) {
+  if (name) console.log(name.toUpperCase());
+  else console.log("Hola!");
+}
+
+greet(null);
+
+/* Optional Chaining */
+
+type Customer = {
+  birthday: Date;
+};
+
+function getCustomer(id: number): Customer | null | undefined {
+  return id === 0 ? null : { birthday: new Date() };
+}
+
+let customer = getCustomer(0);
+console.log(customer?.birthday);
