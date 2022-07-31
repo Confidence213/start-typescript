@@ -1,2 +1,3 @@
-# starting-with-typescript-template
-The template repository for the starting-with-typescript course on Learning Lab.
+# starting-with-typescript
+
+This repository is for the starting-with-typescript course.
