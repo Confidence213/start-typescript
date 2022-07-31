@@ -142,4 +142,10 @@ function getCustomer(id: number): Customer | null | undefined {
 }
 
 let customer = getCustomer(0);
-console.log(customer?.birthday);
+console.log(customer?.birthday?.getFullYear());
+
+//Optional element access operator
+
+//optional call operator
+let log: any = null;
+log?.("a");
